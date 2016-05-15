@@ -1,0 +1,13 @@
+USE product;
+
+CREATE TABLE `discount_info` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `DISCOUNT` int(11) DEFAULT NULL,
+  `DISCOUNT_PRICE` float DEFAULT NULL,
+  `PRODUCT_ID` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+insert into `discount_info`(`ID`,`DISCOUNT`,`DISCOUNT_PRICE`,`PRODUCT_ID`) values (1,50,2000,0);
+
